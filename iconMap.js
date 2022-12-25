@@ -1,15 +1,32 @@
 export const ICON_MAP = new Map()
 
-addMapping([0, 1], "sun")
-addMapping([2], "cloud-sun")
-addMapping([3], "cloud")
-addMapping([45, 48], "smog")
-addMapping(
-  [51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82],
-  "cloud-showers-heavy"
-)
-addMapping([71, 73, 75, 77, 85, 86], "snowflake")
-addMapping([95, 96, 99], "cloud-bolt")
+addMapping([0, 1], "clear-day")
+addMapping([2], "partly-cloudy-day")
+addMapping([3], "overcast-day")
+addMapping([45], "fog")
+addMapping([48], "fog-day")
+addMapping([51], "drizzle")
+addMapping([53], "overcast-drizzle")
+addMapping([55], "extreme-drizzle")
+addMapping([56], "sleet")
+addMapping([57], "partly-cloudy-day-sleet")
+addMapping([61], "rain")
+addMapping([63], "overcast-rain")
+addMapping([65], "extreme-rain")
+addMapping([66], "hail")
+addMapping([67], "partly-cloudy-day-snow")
+addMapping([71], "snow")
+addMapping([73], "overcast-snow")
+addMapping([75], "extreme-snow")
+addMapping([77], "snowflake")
+addMapping([80], "rain")
+addMapping([81], "overcast-rain")
+addMapping([82], "extreme-rain")
+addMapping([85], "snow")
+addMapping([86], "extreme-snow")
+addMapping([95], "thunderstorms")
+addMapping([96], "thunderstorms-rain")
+addMapping([99], "thunderstorms-extreme-rain")
 
 function addMapping(values, icon) {
   values.forEach(value => {
